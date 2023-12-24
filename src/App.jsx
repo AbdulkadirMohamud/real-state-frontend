@@ -1,7 +1,20 @@
+import { Button } from "@mantine/core";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/home/home";
+import Properties from "./pages/properties/Properties";
+import SignUp from "./pages/registeration/SignUp";
+import Login from "./pages/registeration/Login";
+
+
 export default function App() {
   return (
-    <h1 className="text-3xl text-red-500 font-bold underline">
-      Hello world!
-    </h1>
+    <div >
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/properties" element={<Properties/>} />
+        <Route path="/signup" element={<SignUp/>} />
+        <Route path="/login" element={<Login/>} />
+      </Routes>
+    </div>
   )
 }
