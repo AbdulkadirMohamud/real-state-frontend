@@ -1,7 +1,9 @@
 import React from "react";
 import Hero from "../../components/homeContent/Hero";
 import LatestProperty from "../../components/homeContent/LatestProperty";
-import Features from "../../components/homeContent/Featuers";
+import Features from "../../components/homeContent/Features";
+
+
 
 function Home() {
   return (
